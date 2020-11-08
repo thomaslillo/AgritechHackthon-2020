@@ -6,38 +6,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- NEXT IS THE BOOTSTRAP CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title>Open Tourism Niagara</title>
+        <title>OpenTourism Niagara</title>
+
+        <style>
+          .input-group.md-form.form-sm.form-1 input{
+            border: 1px solid black;
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+          }
+          .input-group.md-form.form-sm.form-2 input {
+            border: 1px solid black;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+          }
+          .input-group.md-form.form-sm.form-2 input.red-border {
+            border: 1px solid black;
+          }
+          .input-group.md-form.form-sm.form-2 input.lime-border {
+            border: 1px solid black;
+          }
+          .input-group.md-form.form-sm.form-2 input.amber-border {
+            border: 1px solid black;
+          }
+        </style>
 
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkgreen;">
-            <a class="navbar-brand" style="font-weight: bolder;" href="home.html">Open Tourism Niagara</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active" style="font-weight: bolder;">
-                  <a class="nav-link" href="info.html">Info<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-itema" style="font-weight: bolder;">
-                  <a class="nav-link" href="sustain.html">Sustainability</a>
-                </li>
-                <li class="nav-item" style="font-weight: bolder;">
-                  <a class="nav-link" href="post.html">List An Attraction</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+          <a href="home.html"><img alt="Flag" width="100%" height="100%" style="max-height:180px;max-width:320px;" src="images/logowhite.png" style="align-items: center;"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-itema" style="font-weight: bolder;">
+                <a class="nav-link" href="sustain.html" style="padding-left: 30px;">Sustainability</a>
+              </li>
+              <li class="nav-item activated" style="font-weight: bolder;">
+                <a class="nav-link activated" href="post.html">List An Attraction</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
 
     </head>
     <body>
         <div class="container-fluid">
             <!-- Search form -->
             <div class="md-form mt-0">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="font-weight: bolder;">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="font-weight: bolder;"><br>
             </div>
         </div>
-        
+
+        <div class="container-fluid" style="padding-bottom: 20px;">
+            <div class="row">
+              <div class="col">
+                <span style="font-style: italic; padding-left:20px; font-weight: bolder;"> Showing Results for: Apple Picking</span>
+              </div>
+              <div class="col-10">
+                <button type="button" class="btn btn-success btn-lg">Sustainable Apple Picking Guide</button>
+                <button type="button" class="btn btn-success btn-lg">Ways to Support Sustainability</button>
+                <button type="button" class="btn btn-success btn-lg">Apple Industry Facts</button>
+                <span style="font-style: italic; padding-left:20px; font-weight: bolder; color: darkgreen;">Sustainable Tip #23: Remember not to litter.</span>
+              </div>
+            </div>
+        </div>
+
         <!-- container fluid creates a full length container for the map-->
         <div class="container-fluid map map-container">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EqIVi3MlKHLwh88uQ95Uz3bPc8Az06dq" width="100%" height="850"></iframe>
